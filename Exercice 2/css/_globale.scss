@@ -1,0 +1,371 @@
+@import "_variantes.scss";
+
+.navbar {
+    @include flexCenter;
+    gap: 60px;
+    background-color: var(--grisFonce);
+
+    .navbar__logo {
+        @include flexCenter;
+        font-size: 22px;
+        font-weight: bold;
+        gap: 15px;
+        color: var(--blanc);
+
+        .navbar-logo__f {
+            color: var(--blanc);
+            background-color: rgb(92, 92, 92);
+            padding: 5px 10px;
+        }
+
+        span {
+            color: var(--vert);
+        }
+    }
+
+    ul li {
+        display: inline-block;
+        padding: 0 20px;
+        font-size: 15px;
+        font-weight: bold;
+        color: var(--grisClair);
+
+        &:hover {
+            color: var(--vert);
+            cursor: pointer;
+        }
+    }
+}
+
+
+.qualites {
+    height: 400px;
+    @include flexCenter;
+    gap: 50px;
+
+    .qualites__blocs {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 25vw;
+    }
+}
+
+
+.apropos{
+    height:90vh;
+    display: flex;
+    background-color: var(--grisClair);
+    .apropos__photo{
+        width: 40%;
+        height: 100%;
+        background: url(../images/me.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .apropos__texte{
+        margin: 0 auto;
+        width: 60%;
+        @include flexCenter;
+        flex-direction: column;
+        .apropos-texte__ecrit{
+            display: flex;
+            flex-direction: column;
+            width: 70%;
+            gap: 30px;
+        }
+        .apropos-texte__skills{
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 45px;
+            gap: 50px;
+            width: 70%;
+    
+            .skills{
+                width: 40%;
+                display: flex;
+                gap: 20px;
+            }
+    }
+    }
+}
+
+
+.my-skills {
+    height: 80vh;
+    @include flexCenter;
+    gap: 40px;
+    padding-bottom: 40px;
+
+    .my-skills__texte {
+        width: 35%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        button {
+            @include buttonStyle;
+        }
+    }
+
+    .my-skills__barres{
+        width: 35%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 121px;
+        gap: 20px;
+        
+        h4{
+            margin-bottom: 10px;
+        }
+
+        .barre-principale{
+            position: relative;
+            height: 30px;
+            width: 100%;
+            background-color: var(--grisClair);
+            > div{
+                position: absolute;
+                display: flex;
+                justify-content: right;
+                align-items: center;
+                padding-right: 20px;
+                height: 100%;
+                background-color: var(--vert);
+                color: var(--blanc);
+            }
+        }
+        .barre90 > div{
+            width: 90%;
+        }
+        .barre80 > div{
+            width: 80%;
+        }
+        .barre70 > div{
+            width: 70%;
+        }
+    }
+}
+
+
+.resume{
+    position: relative;
+    height: 50vh;
+    @include flexCenter;
+    flex-direction: column;
+    background-color: var(--grisClair);
+    gap: 30px;
+    p{
+        width: 70%;
+        text-align: center
+    }
+    button{
+        @include buttonStyle;
+    }
+    .resume-triangle{
+        position: absolute;
+        width  : 0;
+        height : 0;
+        bottom: -23px;
+        border-left : 50px solid transparent;
+        border-right : 50px solid transparent;
+        border-top : 25px solid var(--grisClair);
+    }
+}
+
+
+.experiences__education, .experience__work{
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px;
+
+    .experiences-education__texte, .experiences-work__texte{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-right: 50px;
+    }
+
+    .experiences-education__cv, .experiences-work__cv{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        margin-top: 50px;
+
+        .experience__button{
+            background-color: var(--vert);
+            color: var(--blanc);
+            width: max-content;
+            padding: 4px 10px;
+            font-size: 12px;
+        }
+
+        > div{
+            margin-bottom: 45px;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            p > span{
+                font-weight: bold!important;
+            }
+        }
+    }
+
+    hr{
+        border: 1px solid var(--grisClair);
+        width: 100%;
+    }
+}
+
+
+.citation{
+    height: 50vh;
+    @include flexCenter;
+    flex-direction: column;
+    gap: 10px;
+    background-color: var(--grisClair);
+    p{
+        font-size: 18px;
+        text-align: center;
+        width: 60%;
+        line-height: 30px;
+    }
+    .citation__slides div{
+        height: 8px;
+        width: 8px;
+        margin: 0 5px;
+        border-radius: 50%;
+        background: transparent;
+        display: inline-block;
+        border: 2px solid var(--vert);
+        &:first-child{
+            background: transparent;
+            background-color: var(--vert);
+        }
+    }
+}
+
+
+
+.portfolio{
+    height: 150vh;
+    @include flexCenter;
+    flex-direction: column;
+    gap: 25px;
+    p{
+        width: 50%;
+        text-align: center;
+    }
+
+    .portfolio__img{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+
+        > div{
+            height: 230px;
+            width: 260px;
+            background-color: black;
+            .portfolio__hover{
+                display: none;
+                height: 0;
+                width: 0;
+
+            }
+            &:hover .portfolio__hover{
+                height: 230px;
+                width: 260px;
+                background-color: #1fcf1f78;
+                @include flexCenter;
+            }
+        }
+
+        @for $i from 0 through 7 {
+            .img0#{$i} {
+                background-image: url(../images/img0#{$i}.jpg);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+        }
+        .banner02{
+            background-image: url(../images/banner02.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    }
+}
+
+
+.contact{
+    padding: 80px 0;
+    display: flex;
+    justify-content: center;
+    color: var(--blanc);
+    background-color: var(--grisContact);
+    gap: 50px;
+
+    .contact__texte{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        h3{
+            color: var(--blanc);
+        }
+
+        span{
+            color: var(--blanc);
+            margin-right: 30px;
+        }
+    }
+}
+.contact__form{
+    margin-top: 50px;
+    form{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+
+        label{
+            font-family: "Roboto";
+            font-size: 14px;
+            padding-bottom: 10px;
+        }
+
+        input{
+            width: 100%;
+            height: 30px;
+            padding: 0;
+            background-color: #4b5456;
+            border: 0;
+        }
+
+        textarea{
+            width: 100%;
+            height: 150px;
+            background-color: #4b5456;
+            border: 0;
+            padding: 0;
+        }
+        button{
+            width: max-content;
+            padding: 10px 20px;
+            color: var(--blanc);
+            background-color: #191f21;
+            border: 0;
+            font-family: "Roboto";
+            font-weight: bold;
+            cursor: pointer;
+        }
+    }
+}
+

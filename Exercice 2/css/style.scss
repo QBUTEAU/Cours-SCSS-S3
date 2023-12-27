@@ -1,0 +1,35 @@
+@import "_globale.scss";
+@import "_layout.scss";
+@import "_variantes.scss";
+
+body{
+    margin: 0;
+    overflow-x: hidden;
+    font-family: 'Roboto';
+}
+
+:root{
+    --vert : #1fcf1f;
+    --grisClair : #efefef;
+    --gris: #8c8c8c;
+    --grisFonce : #373737;
+    --grisContact : #252e30;
+    --blanc : #F0F0F0;
+}
+
+h3{
+    color: var(--grisFonce);
+    font-size: 25px;
+    margin: 0;
+}
+h4{
+    color: var(--grisFonce);
+    font-size: 17px;
+    margin: 0;
+}
+p{
+    color: var(--gris);
+    font-size: 15px;
+    line-height: 25px;
+    margin: 0;
+}

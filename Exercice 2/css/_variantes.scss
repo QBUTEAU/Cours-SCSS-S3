@@ -1,0 +1,18 @@
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin buttonStyle {
+    width: max-content;
+    padding: 8px 25px;
+    background-color: transparent;
+    color: var(--vert);
+    border: 2px solid var(--vert);
+    font-family: "Roboto";
+    font-weight: bold;
+    &:hover{
+        cursor: pointer;
+    }
+}
