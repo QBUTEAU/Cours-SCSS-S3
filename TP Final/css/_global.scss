@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--orange);
+
+    &:hover{
+        background: #bd3d24;
+    }
+    
+}
+
+:root{
+    --orange : #ed4e2e;
+    --white : rgb(248, 248, 248);
+    --black : rgb(0, 0, 0);
+    --grey : rgb(235, 235, 235);
+    --greyHr : rgb(211, 211, 211);
+}
+
+%button{
+    width: max-content;
+    padding: 7px 20px;
+    background-color: var(--orange);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    margin-top: 20px;
+
+        a{
+            color: var(--white);
+            text-decoration: none;
+        }
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+*{
+    font-family: "Open Sans";
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans";
+    overflow-x: hidden;
+}
+
+h1, h2{
+    margin: 0;
+    font-weight: 600;
+}
+h4{
+    margin: 5px;
+    font-size: 25px;
+    font-weight: 500;
+}
+h3{
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+}
+h5{
+    margin: 0;
+    font-size: 18px;
+    font-weight: 700;
+}
+p{
+    font-size: 13px;
+}
+
+svg{
+    height: 50px;
+}
+
+.hr{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    margin: 15px 0 30px 0;
+
+    .hr__rond{
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+        border: 2px solid var(--greyHr);
+    }
+
+    .hr__barre{
+        height: 2px;
+        width: 100%;
+        background-color: var(--greyHr);
+    }
+
+}

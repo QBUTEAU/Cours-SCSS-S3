@@ -1,0 +1,11 @@
+@mixin flexCenter($justify: center, $align: center) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin backgroundClassic($size: cover, $position: center, $repeat: no-repeat){
+  background-position: $position;
+  background-size: $size;
+  background-repeat: $repeat;
+}

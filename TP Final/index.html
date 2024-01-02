@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/480db9540f.js" crossorigin="anonymous"></script>
+    <title>WR312 SCSS - TP Final QB</title>
+</head>
+<body>
+
+    <header>
+        <div>
+            <h1>A good website can make you a million.
+                First you need make a website.</h1>
+            <p>Let your users sell or rent goods, spaces or
+                services online. Set up your site in no time.
+                You don't need a developer.</p>
+            <button><a href="#video">Watch Video</a></button>
+        </div>
+    </header>
+    
+    <nav class="navbar" id="navbar">
+        <div class="navbar__logo">
+            <img src="img/logo.png" alt="logo">
+        </div>
+        <div class="navbar__liens">
+            <ul>
+                <li><a href="#navbar">HOME</a></li>
+                <li><a href="#services">OUR SERVICES</a></li>
+                <li><a href="#video">VIDEO</a></li>
+                <li><a href="#pricing">PRICING</a></li>
+                <li><a href="#blog">BLOG</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="services" id="services">
+        <div class="services__bloc">
+            <h2>OUR SERVICES</h2>
+            <p>Sharetribe's built-in payment system allows your merchants
+                to accept both PayPal and all of major credit cards.
+            </p>
+            
+            <div class="hr">
+                <div class="hr__rond"></div>
+                <div class="hr__barre"></div>
+                <div class="hr__rond"></div>
+            </div>
+
+            <div class="services-bloc__grid">
+                <div class="services__list">
+                    <svg 
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="54px" height="45px">
+                        <path fill-rule="evenodd"
+                        d="M49.950,-0.001 L4.050,-0.001 C1.822,-0.001 -0.000,1.839 -0.000,4.089 L-0.000,32.726 C-0.000,34.976 1.822,36.816 4.050,36.816 L18.900,36.816 L18.900,39.681 C18.832,39.953 18.292,40.703 18.022,41.044 C17.280,41.999 16.537,42.953 17.077,44.044 C17.280,44.521 17.820,44.999 18.900,44.999 L34.425,44.999 C35.100,44.999 36.652,44.999 37.192,43.771 C37.732,42.544 36.787,41.589 35.977,40.703 C35.707,40.362 35.235,39.884 35.100,39.612 L35.100,36.816 L49.950,36.816 C52.177,36.816 53.1000,34.976 53.1000,32.726 L53.1000,4.089 C53.1000,1.839 52.177,-0.001 49.950,-0.001 ZM20.452,42.271 C21.060,41.521 21.600,40.635 21.600,39.681 L21.600,36.816 L32.400,36.816 L32.400,39.681 C32.400,40.635 33.075,41.521 33.750,42.271 L20.452,42.271 ZM51.300,32.726 C51.300,33.476 50.692,34.089 49.950,34.089 L4.050,34.089 C3.307,34.089 2.700,33.476 2.700,32.726 L2.700,28.635 L51.300,28.635 L51.300,32.726 ZM51.300,25.908 L2.700,25.908 L2.700,4.089 C2.700,3.339 3.307,2.726 4.050,2.726 L49.950,2.726 C50.692,2.726 51.300,3.339 51.300,4.089 L51.300,25.908 Z"/>
+                    </svg>
+                    <h4>Retina Display</h4>
+                    <p>ONE is still the same beautiful theme on every possible
+                        viewport, assuring that every pixel will always respond perfectly.
+                    </p>
+                </div>
+                <div class="services__list">
+                    <svg 
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="54px" height="49px">
+                        <path fill-rule="evenodd"
+                        d="M53.051,17.813 L45.789,17.813 C45.264,17.813 44.840,17.389 44.840,16.867 C44.840,16.344 45.264,15.920 45.789,15.920 L53.051,15.920 C53.575,15.920 53.1000,16.344 53.1000,16.867 C53.1000,17.389 53.575,17.813 53.051,17.813 ZM42.960,6.359 C42.789,6.483 42.592,6.544 42.396,6.544 C42.105,6.544 41.817,6.410 41.632,6.158 C41.320,5.738 41.409,5.146 41.832,4.836 L47.993,0.311 C48.416,-0.001 49.009,0.090 49.320,0.510 C49.631,0.930 49.542,1.522 49.119,1.833 L42.960,6.359 ZM38.743,24.956 C34.550,30.726 35.639,33.515 35.650,33.543 C35.848,34.016 35.636,34.572 35.167,34.781 C34.698,34.990 34.150,34.801 33.927,34.338 C33.750,33.969 32.338,30.545 37.222,23.823 C38.949,21.586 39.852,18.930 39.852,16.125 C39.852,9.173 34.176,3.517 27.201,3.517 C20.225,3.517 14.549,9.173 14.549,16.125 C14.549,18.923 15.447,21.568 17.148,23.781 C17.172,23.809 17.194,23.837 17.216,23.867 C22.097,30.582 20.739,33.967 20.567,34.332 C20.406,34.675 20.064,34.876 19.707,34.876 C19.572,34.876 19.435,34.848 19.306,34.788 C18.831,34.565 18.626,34.002 18.848,33.530 C18.848,33.524 19.881,30.790 15.725,25.041 C15.715,25.029 15.705,25.016 15.695,25.004 C13.702,22.443 12.649,19.373 12.649,16.126 C12.649,8.131 19.177,1.626 27.201,1.626 C35.224,1.626 41.751,8.130 41.751,16.126 C41.751,19.353 40.710,22.405 38.743,24.956 ZM12.144,6.856 C11.949,6.856 11.751,6.796 11.581,6.672 L4.996,1.833 C4.574,1.522 4.485,0.930 4.796,0.509 C5.107,0.089 5.702,-0.001 6.123,0.310 L12.709,5.148 C13.131,5.459 13.221,6.051 12.909,6.471 C12.722,6.723 12.436,6.856 12.144,6.856 ZM9.392,16.867 C9.392,17.389 8.967,17.813 8.443,17.813 L0.949,17.813 C0.424,17.813 -0.000,17.389 -0.000,16.867 C-0.000,16.344 0.424,15.920 0.949,15.920 L8.443,15.920 C8.968,15.920 9.392,16.344 9.392,16.867 ZM11.880,26.842 C12.302,26.532 12.895,26.621 13.209,27.042 C13.520,27.462 13.430,28.054 13.008,28.365 L6.125,33.423 C5.955,33.548 5.758,33.607 5.562,33.607 C5.271,33.607 4.983,33.473 4.797,33.222 C4.486,32.802 4.576,32.210 4.997,31.900 L11.880,26.842 ZM18.538,16.126 C18.538,16.648 18.113,17.072 17.588,17.072 C17.063,17.072 16.639,16.648 16.639,16.126 C16.639,10.664 21.098,6.220 26.579,6.220 C27.104,6.220 27.528,6.644 27.528,7.167 C27.528,7.689 27.104,8.112 26.579,8.112 C22.145,8.112 18.538,11.707 18.538,16.126 ZM20.548,35.390 L33.342,35.390 C34.627,35.390 35.674,36.432 35.674,37.714 L35.674,38.518 C35.674,39.801 34.628,40.843 33.342,40.843 L20.548,40.843 C19.261,40.843 18.215,39.799 18.215,38.518 L18.215,37.714 C18.215,36.432 19.261,35.390 20.548,35.390 ZM20.114,38.518 C20.114,38.756 20.308,38.951 20.548,38.951 L33.342,38.951 C33.582,38.951 33.775,38.756 33.775,38.518 L33.775,37.714 C33.775,37.476 33.582,37.282 33.342,37.282 L20.548,37.282 C20.308,37.282 20.114,37.476 20.114,37.714 L20.114,38.518 ZM22.084,42.281 C22.609,42.281 23.034,42.704 23.034,43.228 L23.034,45.119 L27.194,47.011 L31.382,45.041 L31.382,43.228 C31.382,42.705 31.806,42.283 32.331,42.283 C32.856,42.283 33.280,42.705 33.280,43.228 L33.280,45.640 C33.280,46.006 33.069,46.339 32.737,46.495 L27.606,48.907 C27.478,48.968 27.339,48.999 27.201,48.999 C27.066,48.999 26.932,48.970 26.807,48.914 L21.690,46.586 C21.352,46.433 21.135,46.096 21.135,45.726 L21.135,43.227 C21.135,42.705 21.559,42.281 22.084,42.281 ZM42.678,27.167 L49.118,31.900 C49.539,32.210 49.629,32.802 49.318,33.222 C49.132,33.473 48.845,33.607 48.554,33.607 C48.359,33.607 48.161,33.547 47.991,33.422 L41.550,28.690 C41.129,28.379 41.039,27.787 41.350,27.366 C41.662,26.945 42.255,26.856 42.678,27.167 Z"/>
+                    </svg>
+                    <h4>SEO Optimized</h4>
+                    <p>ONE is still the same beautiful theme on every possible
+                        viewport, assuring that every pixel will always respond perfectly.
+                    </p>
+                </div>
+                <div class="services__list">
+                    <svg 
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="46px" height="46px">
+                        <path fill-rule="evenodd"  fill="rgb(31, 44, 51)"
+                        d="M44.850,21.849 L41.342,21.849 C40.767,12.649 33.350,5.231 24.150,4.656 L24.150,1.149 C24.150,0.517 23.632,-0.001 22.1000,-0.001 C22.367,-0.001 21.850,0.517 21.850,1.149 L21.850,4.656 C12.650,5.231 5.232,12.649 4.657,21.849 L1.150,21.849 C0.517,21.849 -0.000,22.366 -0.000,22.999 C-0.000,23.631 0.517,24.149 1.150,24.149 L4.657,24.149 C5.232,33.348 12.650,40.766 21.850,41.341 L21.850,44.849 C21.850,45.481 22.367,45.999 22.1000,45.999 C23.632,45.999 24.150,45.481 24.150,44.849 L24.150,41.341 C33.350,40.766 40.767,33.348 41.342,24.149 L44.850,24.149 C45.482,24.149 45.1000,23.631 45.1000,22.999 C45.1000,22.366 45.482,21.849 44.850,21.849 ZM35.650,24.149 L39.042,24.149 C38.467,32.141 32.085,38.466 24.150,39.041 L24.150,35.649 C24.150,35.016 23.632,34.498 22.1000,34.498 C22.367,34.498 21.850,35.016 21.850,35.649 L21.850,39.041 C13.915,38.466 7.532,32.084 6.957,24.149 L10.350,24.149 C10.982,24.149 11.500,23.631 11.500,22.999 C11.500,22.366 10.982,21.849 10.350,21.849 L6.957,21.849 C7.532,13.914 13.915,7.531 21.850,6.956 L21.850,10.349 C21.850,10.981 22.367,11.499 22.1000,11.499 C23.632,11.499 24.150,10.981 24.150,10.349 L24.150,6.956 C32.085,7.531 38.467,13.914 39.042,21.849 L35.650,21.849 C35.017,21.849 34.500,22.366 34.500,22.999 C34.500,23.631 35.017,24.149 35.650,24.149 Z"/>
+                    </svg>
+                    <h4>Animation Effects</h4>
+                    <p>ONE is still the same beautiful theme on every possible
+                        viewport, assuring that every pixel will always respond perfectly.
+                    </p>
+                </div>
+                <div class="services__list">
+                    <svg 
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="49px" height="42px">
+                        <path fill-rule="evenodd"  fill="rgb(31, 44, 51)"
+                        d="M23.674,41.533 L4.253,22.569 C3.427,21.813 2.778,20.940 2.187,20.009 C-1.000,14.832 -0.174,8.201 4.253,3.896 C6.792,1.394 10.215,-0.002 13.816,-0.002 C19.483,-0.002 23.024,3.256 24.500,5.118 C25.976,3.256 29.517,-0.002 35.184,-0.002 C38.785,-0.002 42.208,1.394 44.746,3.896 C49.114,8.201 49.1000,14.832 46.812,20.009 C46.222,20.940 45.573,21.813 44.746,22.569 L25.326,41.533 C24.854,41.998 24.146,41.998 23.674,41.533 ZM13.816,2.325 C10.805,2.325 8.031,3.488 5.906,5.524 C2.305,9.073 1.597,14.541 4.194,18.788 C4.667,19.544 5.257,20.301 5.906,20.940 L24.500,39.089 L43.094,20.940 C43.743,20.301 44.333,19.602 44.805,18.788 C47.403,14.483 46.753,9.015 43.094,5.524 C40.969,3.488 38.135,2.325 35.184,2.325 C30.934,2.325 27.392,4.594 25.503,7.735 C25.031,8.491 23.910,8.491 23.437,7.735 C21.608,4.594 18.066,2.325 13.816,2.325 Z"/>
+                    </svg>
+                    <h4>Clean Modern Code</h4>
+                    <p>ONE is still the same beautiful theme on every possible
+                        viewport, assuring that every pixel will always respond perfectly.
+                    </p>
+                </div>
+                <div class="services__list">
+                    <svg 
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="52px" height="43px">
+                        <path fill-rule="evenodd"  fill="rgb(31, 44, 51)"
+                        d="M51.439,5.006 L46.954,0.499 C46.394,-0.001 45.482,-0.001 44.992,0.499 L35.601,10.087 L1.402,10.087 C0.631,10.087 -0.000,10.731 -0.000,11.518 L-0.000,41.568 C-0.000,42.354 0.631,42.998 1.402,42.998 L43.450,42.998 C44.221,42.998 44.852,42.354 44.852,41.568 L44.852,13.807 L51.439,7.082 C51.1000,6.509 51.1000,5.580 51.439,5.006 ZM42.119,40.137 L2.803,40.137 L2.803,12.949 L32.798,12.949 L25.019,20.891 C24.809,21.033 24.738,21.320 24.668,21.534 L23.407,25.827 L11.143,25.827 C10.372,25.827 9.741,26.471 9.741,27.258 C9.741,28.045 10.372,28.689 11.143,28.689 L24.458,28.689 C24.528,28.689 27.191,28.761 29.084,28.259 C30.065,28.045 30.766,27.830 30.766,27.830 C31.046,27.759 31.256,27.616 31.396,27.473 L42.048,16.670 L42.048,40.137 L42.119,40.137 L42.119,40.137 ZM29.714,25.183 L26.420,26.042 L27.261,22.680 L45.973,3.576 L48.426,6.080 L29.714,25.183 Z"/>
+                    </svg>
+                    <h4>Google Fonts</h4>
+                    <p>ONE is still the same beautiful theme on every possible
+                        viewport, assuring that every pixel will always respond perfectly.
+                    </p>
+                </div>
+                <div class="services__list">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28.571px" height="50px">
+                        <path fill-rule="evenodd"
+                        d="M25.088,-0.003 L3.482,-0.003 C1.961,-0.003 -0.000,1.483 -0.000,3.511 L-0.000,46.489 C-0.000,48.517 1.961,50.006 3.482,50.006 L25.088,50.006 C26.609,50.006 28.571,48.517 28.571,46.489 L28.571,3.511 C28.571,1.483 26.609,-0.003 25.088,-0.003 ZM26.472,46.489 C26.472,47.128 25.967,47.657 25.088,47.657 L3.482,47.657 C2.603,47.657 2.098,47.128 2.098,46.489 L2.098,44.444 L26.472,44.444 L26.472,46.489 ZM26.472,41.072 L2.098,41.072 L2.098,7.383 L26.472,7.383 L26.472,41.072 ZM26.472,5.614 L2.098,5.614 L2.098,3.511 C2.098,2.872 2.603,2.343 3.482,2.343 L25.088,2.343 C25.967,2.343 26.472,2.872 26.472,3.511 L26.472,5.614 Z"/>
+                    </svg>
+                    <h4>Fully Responsive</h4>
+                    <p>ONE is still the same beautiful theme on every possible
+                        viewport, assuring that every pixel will always respond perfectly.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <article class="video" id="video">
+        <div>
+            <img src="img/play.png" alt="play">
+        </div>
+    </article>
+
+    <section class="pricing" id="pricing">
+        <div class="pricing__bloc">
+            <h2>SIMPLE PRICING</h2>
+            <p>Sharetribe's built-in payment system allows your merchants
+                to accept both PayPal and all of major credit cards.
+            </p>
+
+            <div class="hr">
+                <div class="hr__rond"></div>
+                <div class="hr__barre"></div>
+                <div class="hr__rond"></div>
+            </div>
+
+            <div class="pricing-bloc__grid">
+                <div class="pricing__offers">
+                    <h4>Free</h4>
+                    <div class="pricing-offers__price"><h3>0$</h3><h4>/mo</h4></div>
+                    <p>Up to 300 members</p>
+                    <p>Unlimited traffic & storage*</p>
+                    <p>No transaction fees**</p>
+                    <p>No support</p>
+                    <p>10 GB Monthly Bandwidth</p>
+                    <p>Limited Users</p>
+                    <p>100 Limited Domains</p>
+                    <p>100 Limited Emails</p>
+                    <button><a href="">Get Started</a></button>
+                </div>
+                <div class="pricing__offers">
+                    <h4>Starter</h4>
+                    <div class="pricing-offers__price"><h3>19$</h3><h4>/mo</h4></div>
+                    <p>Up to 500 members</p>
+                    <p>Unlimited traffic & storage*</p>
+                    <p>No transaction fees**</p>
+                    <p>Premium support</p>
+                    <p>30 GB Monthly Bandwidth</p>
+                    <p>Limited Users</p>
+                    <p>500 Limited Domains</p>
+                    <p>500 Limited Emails</p>
+                    <button><a href="">Get Started</a></button>
+                </div>
+                <div class="pricing__offers pro_offer">
+                    <h4>Pro</h4>
+                    <div class="pricing-offers__price"><h3>39$</h3><h4>/mo</h4></div>
+                    <p>Up to 700 members</p>
+                    <p>Unlimited traffic & storage*</p>
+                    <p>No transaction fees**</p>
+                    <p>Premium support</p>
+                    <p>30 GB Monthly Bandwidth</p>
+                    <p>Limited Users</p>
+                    <p>500 Limited Domains</p>
+                    <p>500 Limited Emails</p>
+                    <button><a href="">Get Started</a></button>
+                </div>
+                <div class="pricing__offers">
+                    <h4>Growth</h4>
+                    <div class="pricing-offers__price"><h3>49$</h3><h4>/mo</h4></div>
+                    <p>Up to 100 members</p>
+                    <p>Unlimited traffic & storage*</p>
+                    <p>No transaction fees**</p>
+                    <p>Premium support</p>
+                    <p>Unlimited Monthly Bandwidth</p>
+                    <p>Unlimited Users</p>
+                    <p>Unlimited Domains</p>
+                    <p>Unlimited Emails</p>
+                    <button><a href="">Get Started</a></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <article class="start__business">
+        <div>
+            <h5>We Are Ready to Help You</h4>
+            <h2>Get the Best Solution for Your Business</h2>
+            <button>GET STARTED &#x2794;</button>
+        </div>
+    </article>
+
+    <section class="blog" id="blog">
+        <div class="blog__bloc">
+            <h2>LASTEST PROJECTS</h2>
+            <p>Sharetribe's built-in payment system allows your merchants
+                to accept both PayPal and all of major credit cards.
+            </p>
+
+            <div class="hr">
+                <div class="hr__rond"></div>
+                <div class="hr__barre"></div>
+                <div class="hr__rond"></div>
+            </div>
+
+            <div class="blog__sections">
+                <div id="blog-sections__all">All</div>
+                <span>/</span>
+                <div>Web Design</div>
+                <span>/</span>
+                <div>Branding</div>
+                <span>/</span>
+                <div>Photography</div>
+            </div>
+
+            <div class="blog-bloc__grid">
+                <div class="img_01"></div>
+                <div class="img_02"></div>
+                <div class="img_03"></div>
+                <div class="img_04"></div>
+                <div class="img_05"></div>
+                <div class="img_06"></div>
+            </div>
+        </div>
+    </section>
+
+    <aside class="avis">
+        <div class="avis__customers">
+            <div>
+                <h2>HAPPY CUSTOMERS</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Molestias excepturi atque provident minima alias, pariatur
+                    quos eius dicta placeat nesciunt.</p>
+                <img src="img/customer.png" alt="customer">
+                <div class="avis-customers__slide">
+                    <div></div>
+                    <div class="slide-noire"></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+        <div class="avis__subscribe">
+            <div>
+                <h2>SUBSCRIBE</h2>
+                <input class="input" type="text" placeholder="Enter Your Name">
+                <button><a href="">Submit</a></button>
+            </div>
+        </div>
+    </aside>
+
+    <section class="contact" id="contact">
+        <div class="contact__bloc">
+            <h2>CONTACT US</h2>
+            <p>Sharetribe's built-in payment system allows your merchants
+                to accept both PayPal and all of major credit cards.
+            </p>
+
+            <div class="hr">
+                <div class="hr__rond"></div>
+                <div class="hr__barre"></div>
+                <div class="hr__rond"></div>
+            </div>
+
+            <div class="contact-bloc__input">
+                <input class="input" type="text" placeholder="First Name">
+                <input class="input" type="text" placeholder="Last Name">
+            </div>
+            <div class="contact-bloc__input">
+                <input class="input" type="text" placeholder="Subject">
+                <input class="input" type="text" placeholder="Your Email">
+            </div>
+            <textarea name="message" id="textarea" placeholder="Your Message"></textarea>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer__bloc">
+            <div class="footer__aboutus">
+                <h5>ABOUT US</h5>
+                <img src="img/logo_footer.png" alt="logo_komola" height="23px" width="70%">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam omnis odio saepe, 
+                    culpa quaerat molestias praesentium aliquid ducimus quidem voluptate, non ea 
+                    unde in porro reprehenderit explicabo ullam laudantium cum.</p>
+            </div>
+            <div class="footer__getintouch">
+                <h5>GET IN TOUCH</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, optio quaerat atque assumenda quam quas commodi culpa nobis ullam officia.</p>
+                <div>
+                    <p><i class="fa-solid fa-location-dot" color="var(--white)"></i>84 Street, City, State 24813</p>
+                    <p><i class="fa-solid fa-phone" color="var(--white)"></i>+00 (123) 456 78 90</p>
+                    <p><i class="fa-regular fa-envelope" color="var(--white)"></i>info@komola.com</p>
+                </div>
+            </div>
+            <div class="footer__works">
+                <h5>LATEST WORKS</h5>
+                <div class="footer-works__img">
+                    <img src="img/mini_01.png" alt="mini01">
+                    <img src="img/mini_02.png" alt="mini02">
+                    <img src="img/mini_03.png" alt="mini03">
+                    <img src="img/mini_04.png" alt="mini04">
+                </div>
+            </div>
+            <div class="footer__subscribe">
+                <h5>SUBSCRIBE</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, sit.</p>
+                <div class="footer__input">
+                    <input type="text" placeholder="Your email address">
+                    <button><a href="">SUBSCRIBE</a></button>
+                </div>
+                <div class="footer__reseaux">
+                    <div><i class="fa-brands fa-facebook-f" color="var(--white)"></i></div>
+                    <div><i class="fa-brands fa-twitter" color="var(--white)"></i></div>
+                    <div><i class="fa-brands fa-behance" color="var(--white)"></i></div>
+                    <div><i class="fa-brands fa-dribbble" color="var(--white)"></i></div>
+                    <div><i class="fa-brands fa-linkedin-in" color="var(--white)"></i></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="copyright">
+        <p>&copy; 2014 KOMOLA. All rights reserved.</p>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,354 @@
+.navbar{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+
+    .navbar__logo{
+        img{
+            width: 200px;
+        }
+    }
+
+    .navbar__liens{
+        ul{
+            list-style: none;
+            display: flex;
+            margin: 0;
+            li{
+                margin: 0 7px;
+                padding: 5px 10px;
+                border-radius: 5px;;
+                &:hover{
+                    background-color: var(--orange);
+                    a{
+                        color: var(--white);
+                    }
+                }
+                a{
+                    color: var(--black);
+                    text-decoration: dashed;
+                }
+            }
+        }
+    }
+}
+
+hr{
+    width: 50%;
+}
+
+.services, .pricing, .blog, .contact{
+    padding: 50px 0;
+    @include flexCenter(center, center);
+    flex-direction: column;
+    background-color: var(--grey);
+
+    .services__bloc, .blog__bloc, .contact__bloc{
+        height: 90%;
+        width: 90%;
+        @include flexCenter(center, center);
+        flex-direction: column;
+        background-color: var(--white);
+        border-radius: 20px 20px 0 0;
+
+        h2{
+            margin-top: 60px;
+            font-size: 35px;
+            color: var(--orange);
+        }
+        > p{
+            text-align: center;
+            width: 35%;
+        }
+
+        .blog__sections{
+            font-weight: 600;
+            margin-top: 20px;
+            font-size: 13px;
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+            div{
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                padding: 3px 15px;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+            div:hover, #blog-sections__all{
+                background-color: var(--orange);
+                color: var(--white);
+            }
+
+        }
+
+        .services-bloc__grid, .blog-bloc__grid{
+            margin: 80px 0 60px 0;
+            width: 85%;
+            @include flexCenter(center, center);
+            flex-wrap: wrap;
+
+            @for $x from 1 through 6{
+                .img_0#{$x}{
+                    background-image: url(../img/img_0#{$x}.png);
+                    @include backgroundClassic(cover, center, no-repeat);
+                }
+            }
+            
+            .services__list{
+                text-align: center;
+                width: 300px;
+                margin: 20px 25px;
+                &:hover path, &:hover h4{
+                    fill: var(--orange);
+                    color: var(--orange);
+                }
+            }
+
+
+        }
+    }
+}
+
+.video{
+    height: 65vh;
+    background-image: url(../img/video.png);
+    @include backgroundClassic(cover, center, no-repeat);
+    > div{
+        @include flexCenter(center, center);
+        height: 100%;
+        width: 100%;
+        background-color: #000000c9;
+    }
+}
+
+.pricing__bloc{
+    border-radius: 0 0 20px 20px!important;
+    @extend .services__bloc;
+
+    .pricing-bloc__grid{
+        grid-template-columns: repeat(4, 1fr)!important;
+        grid-template-rows:none!important;
+        justify-content: center;
+        align-items: center;
+        gap: 0;
+        width: 90%;
+        margin-bottom: 80px!important;
+        @extend .services-bloc__grid;
+
+        .pricing__offers{
+            text-align: center;
+            border: 2px var(--grey) solid;
+            width: 250px;
+            padding: 20px 0;
+            margin: 20px 12px;
+
+            .pricing-offers__price{
+                margin: 20px 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                height: 90px;
+                background-color: var(--grey);
+                h3{
+                    font-size: 50px;
+                }
+            }
+
+            button{
+                @extend %button;
+            }
+        }
+
+        .pro_offer{
+            padding: 35px 0;
+            border: 2px var(--orange) solid;
+            .pricing-offers__price{
+                background-color: var(--orange);
+                color: var(--white);
+            }
+        }
+    }
+
+}
+
+
+.start__business{
+    height: 55vh;
+    background-image: url(../img/header2.png);
+    background-position: center;
+
+    div{
+        height: 100%;
+        width: 100%;
+        @include flexCenter(center, center);
+        flex-direction: column;
+        background-color: #000000ae;
+        color: white;
+
+        button{
+            width: max-content;
+            padding: 7px 20px;
+            background-color: transparent;
+            border: 1px var(--white) solid;
+            border-radius: 5px;
+            cursor: pointer;
+            color: white;
+            margin-top: 20px;
+        }
+    }
+}
+
+
+.blog-bloc__grid > div{
+    height: 315px;
+    width: 315px;
+    margin: 15px;
+}
+
+
+.avis{
+    height: 70vh;
+    display: flex;
+    .avis__customers{
+        background-image: url(../img/customers.jpg);
+        @include backgroundClassic(cover, center, no-repeat);
+        width: 50%;
+        > div{
+            height: 100%;
+            width: 100%;
+            @include flexCenter(center, center);
+            flex-direction: column;
+            background-color: #ed4e2ed4;
+            h2{
+                font-size: 35px;
+                color: var(--white);
+            }
+            p{
+                text-align: center;
+                width: 60%;
+                color: var(--white);
+            }
+            .avis-customers__slide{
+                margin-top: 20px;
+                display: flex;
+                > div{
+                    height: 10px;
+                    width: 10px;
+                    border-radius: 50%;
+                    background-color: var(--white);
+                    margin: 3px;
+                }
+                .slide-noire{
+                    background-color: rgba(0, 0, 0, 0.522);
+                }
+            }
+        }
+    }
+    .avis__subscribe{
+        background-image: url(../img/subscribe.jpg);
+        @include backgroundClassic(cover, center, no-repeat);
+        width: 50%;
+        > div{
+            height: 100%;
+            width: 100%;
+            @include flexCenter(center, center);
+            gap: 20px;
+            flex-direction: column;
+            background-color: #000000b5;
+            h2{
+                font-size: 35px;
+                color: var(--white);
+            }
+            .input{
+                background-color: transparent;
+                border: 1px var(--white) solid;
+                border-radius: 5px;
+                width: 55%;
+                height: 50px;
+                text-indent: 15px;
+                padding: 0;
+                &[type=text]{
+                    color: var(--white);
+                }
+            }
+            button{
+                @extend %button;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.contact__bloc{
+    border-radius: 0 0 20px 20px!important;
+    @extend .services__bloc;
+    margin: 0 auto;
+    .contact-bloc__input{
+        display: flex;
+        flex-wrap: wrap;
+        width: 87%;
+        gap: 3%;
+        margin: 10px 0;
+        input{
+            background-color: transparent;
+            border: 1px var(--black) solid;
+            border-radius: 5px;
+            width: 48%;
+            height: 50px;
+            text-indent: 15px;
+                &[type=text]{
+                    color: var(--black);
+                }
+        }
+    }
+    textarea{
+        background-color: transparent;
+        border: 1px var(--black) solid;
+        border-radius: 5px;
+        width: 85.6%;
+        height: 200px;
+        text-indent: 8px;
+        padding: 10px;
+        margin: 10px 0 60px 0;
+            &[type=text]{
+                color: var(--black);
+            }
+    
+    }
+}
+
+@media screen and (max-width: 1440px){
+    .contact-bloc__input{
+        flex-direction: column;
+        margin: 0!important;
+        input{
+            width: 100%!important;
+            margin: 10px 0;
+            padding: 0;
+        }
+        
+    }
+    textarea{
+        width: 84%!important;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .avis{
+        flex-direction: column;
+        height: 100vh;
+        .avis__customers, .avis__subscribe{
+            width: 100%;
+            height: 50%;
+        }
+    }
+
+    .navbar__liens{
+        display: none;
+    }
+}
